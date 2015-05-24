@@ -1,6 +1,9 @@
 The files in babel.github.io have a different license, see: https://github.com/babel/babel.github.io
 
-Everything else is:
+The non-markdown portion of the presentation.html file is based on the `remark` browser-based slideshow tool, for licensing see: https://github.com/gnab/remark
+
+
+The markdown portion of presentation.html and all other files are:
 
 Copyright (c) 2014-2015 Brian Sturgill <codersnext@gmail.com>
 
