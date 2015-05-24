@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" class="babel-fullscreen" class="no-js">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Babel · The compiler for writing next generation JavaScript</title>
+  <meta name="description" content="The compiler for writing next generation JavaScript">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"491d642b6e2ef7d480ee070c3cc6b651",petok:"b3dda81352bbea34ba83bdd856f30fff31a1e3b0-1432004318-1800",zone:"babeljs.io",rocket:"0",apps:{"ga_key":{"ua":"UA-59713524-1","ga_bs":"2"}}}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=7e13c32551/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script>
+<link rel="stylesheet" href="css/main.css">
+  <link rel="canonical" href="https://babeljs.io/repl/">
+  <link rel="alternate" type="application/rss+xml" title="Babel" href="https://babeljs.io/feed.xml" />
+
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+
+  <meta name="og:url" content="https://babeljs.io/">
+  <meta name="og:image" content="website">
+  <meta name="og:title" content="Babel · The compiler for writing next generation JavaScript">
+  <meta name="og:description" content="The compiler for writing next generation JavaScript">
+  <meta name="og:image" content="https://babeljs.io/images/share-image.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@babeljs">
+  <meta name="twitter:title" content="Babel · The compiler for writing next generation JavaScript">
+  <meta name="twitter:description" content="The compiler for writing next generation JavaScript">
+  <meta name="twitter:image:src" content="https://babeljs.io/images/share-image.png">
+  <meta name="twitter:url" content="https://babeljs.io/repl/">
+
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/lodash.min.js"></script>
+  <script src="scripts/bootstrap.min.js"></script>
+  <script>$("html").removeClass("no-js").addClass("js");</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-59713524-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+(function(b){(function(a){"__CF"in b&&"DJS"in b.__CF?b.__CF.DJS.push(a):"addEventListener"in b?b.addEventListener("load",a,!1):b.attachEvent("onload",a)})(function(){"FB"in b&&"Event"in FB&&"subscribe"in FB.Event&&(FB.Event.subscribe("edge.create",function(a){_gaq.push(["_trackSocial","facebook","like",a])}),FB.Event.subscribe("edge.remove",function(a){_gaq.push(["_trackSocial","facebook","unlike",a])}),FB.Event.subscribe("message.send",function(a){_gaq.push(["_trackSocial","facebook","send",a])}));"twttr"in b&&"events"in twttr&&"bind"in twttr.events&&twttr.events.bind("tweet",function(a){if(a){var b;if(a.target&&a.target.nodeName=="IFRAME")a:{if(a=a.target.src){a=a.split("#")[0].match(/[^?=&]+=([^&]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf("url")===0){b=unescape(c.split("=")[1]);break a}}b=void 0}_gaq.push(["_trackSocial","twitter","tweet",b])}})})})(window);
+/* ]]> */
+</script>
+</head>
+
+
+  <body>
+
+    <nav role="navigation" id="header" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" data-toggle="collapse" data-target="#navigation" class="navbar-toggle collapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand logo">Babel</a>
+    </div>
+    <div id="navigation" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        
+          
+            <li >
+              <a href="/docs/learn-es6/">Learn ES6</a>
+            </li>
+          
+        
+          
+            <li >
+              <a href="/docs/using-babel/">Using Babel</a>
+            </li>
+          
+        
+          
+            <li class="dropdown ">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Docs <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                
+                  <li >
+                    <a href="/docs/usage/cli/">CLI</a>
+                  </li>
+                
+                  <li >
+                    <a href="/docs/usage/require/">Require Hook</a>
+                  </li>
+                
+                  <li >
+                    <a href="/docs/usage/api/">API</a>
+                  </li>
+                
+                  <li >
+                    <a href="/docs/usage/options/">Options</a>
+                  </li>
+                
+                  <li >
+                    <a href="/docs/usage/transformers/">Transformers</a>
+                  </li>
+                
+                  <li >
+                    <a href="/docs/usage/polyfill/">Polyfill</a>
+                  </li>
+                
+                  <li >
+                    <a href="/docs/usage/runtime/">Runtime</a>
+                  </li>
+                
+                  <li >
+                    <a href="/docs/usage/babelrc/">babelrc</a>
+                  </li>
+                
+                  <li >
+                    <a href="/docs/usage/plugins/">Plugins</a>
+                  </li>
+                
+                  <li >
+                    <a href="/docs/usage/caveats/">Caveats</a>
+                  </li>
+                
+                  <li >
+                    <a href="/docs/usage/modules/">Modules</a>
+                  </li>
+                
+                  <li >
+                    <a href="/docs/usage/loose/">Loose mode</a>
+                  </li>
+                
+                  <li >
+                    <a href="/docs/usage/browser/">Browser</a>
+                  </li>
+                
+                  <li >
+                    <a href="/docs/usage/experimental/">Experimental</a>
+                  </li>
+                
+                  <li >
+                    <a href="/docs/usage/jsx/">JSX</a>
+                  </li>
+                
+                  <li >
+                    <a href="/docs/usage/external-helpers/">External helpers</a>
+                  </li>
+                
+              </ul>
+            </li>
+          
+        
+          
+            <li class="active">
+              <a href="/repl/">Try it out</a>
+            </li>
+          
+        
+          
+            <li >
+              <a href="/docs/faq/">FAQ</a>
+            </li>
+          
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://gitter.im/babel/babel">Support</a></li>
+        <li >
+          <a href="/blog/">Blog</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/babeljs">Twitter</a>
+        </li>
+        <li>
+          <a href="https://github.com/babel/babel">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="babel-repl">
+  <form class="form babel-repl-toolbar">
+    <div class="pull-left">
+      <div class="form-group">
+        <label for="option-experimental">
+          <input id="option-experimental" type="checkbox">
+          Experimental
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label for="option-loose-mode">
+          <input id="option-loose-mode" type="checkbox">
+          Loose mode
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label for="option-evaluate">
+          <input id="option-evaluate" type="checkbox">
+          Evaluate
+        </label>
+      </div>
+    </div>
+
+    <div class="pull-right">
+      <div class="form-group hidden">
+        <label for="examples">Examples:</label>
+        <select id="examples">
+          <optgroup label="ES6 Features">
+            <option>Arrows</option>
+            <option>Classes</option>
+            <option>Enhanced Object Literals</option>
+            <option>Template Strings</option>
+            <option>Destructuring</option>
+            <option>Default + Rest + Spread</option>
+            <option>Let + Const</option>
+            <option>Iterators + For..Of</option>
+            <option>Generators</option>
+            <option>Comprehensions</option>
+            <option>Unicode</option>
+            <option>Modules</option>
+            <option>Module Loaders</option>
+            <option>Map + Set + WeakMap + WeakSet</option>
+            <option>Proxies</option>
+            <option>Symbols</option>
+            <option>Subclassable Built-ins</option>
+            <option>Math + Number + String + Object APIs</option>
+            <option>Binary and Octal Literals</option>
+            <option>Promises</option>
+            <option>Reflect API</option>
+            <option>Tail Calls</option>
+          </optgroup>
+        </select>
+      </div>
+    </div>
+  </form>
+
+  <div class="babel-repl-editor babel-repl-input"><div class="ace_editor"></div></div>
+  <div class="babel-repl-editor babel-repl-output"><div class="ace_editor"></div></div>
+  <div class="babel-repl-reporter babel-repl-errors"></div>
+  <div class="babel-repl-reporter babel-repl-console"></div>
+
+  <!--script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script-->
+  <script src="scripts//ace.js"></script>
+  <script src="scripts/babel.js"></script>
+  <script src="scripts/repl.js"></script>
+</div>
+
+
+    <div class="footer text-center">
+  <a href="https://github.com/babel/babel">Babel</a> · v5.4.0
+ · Distributed under MIT License
+</div>
+
+
+  </body>
+
+</html>
